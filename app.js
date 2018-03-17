@@ -8,13 +8,13 @@ $(function () {
         //sets a variable to the data recorded on each child append
         let currentTrain = snapshot.val();
         
-        //set var/let to bring in moment data
-        let timeNow = moment(); //create time now
-        let freqTime = currentTrain.freq; //set frequency time for math
+        //set let to bring in moment data
+        let timeNow = moment(); 
+        let freqTime = currentTrain.freq; 
         let firstTime = moment(currentTrain.first, "hh:mm").subtract(1, "years");
-            //"Adding" the subtract 1 year because we need the create a time table that will let you subtract start-time from current-time
+        //"Adding" the subtract 1 year 
         
-        //starting the math
+        //starting math
             let diffTime = moment().diff(moment(firstTime), "minutes");
             console.log("DIFFERENCE IN TIME: " + diffTime);
 
@@ -24,16 +24,13 @@ $(function () {
         let minutesAway = freqTime - remainder
         let nextTrain = moment().add(minutesAway, "minutes");
 
-
-
-
-        //defining table to dynamically push with database
+        //defining table to push with database
         var newRow = $("<tr class='tableRow'>");
         var trainName = $("<td class='name'>").text(currentTrain.name);
         var destination = $("<td class='dest'>").text(currentTrain.dest);
         var frequency = $("<td class='role'>").text(currentTrain.freq);
         var firstTrain = $("<td class='role'>").text(currentTrain.first);
-        //need to define next arrival and min away with math
+        //need to define next arrival 
         var nextArrival = $("<td class='arrival'>").text(moment(nextTrain).format("hh:mm A"));
         var minAway = $("<td class='wait-time'>").text(minutesAway);
 
