@@ -1,13 +1,14 @@
 window.firebase = function () {
       
+    // Initialize Firebase
     var config = {
-        apiKey: "AIzaSyCEc5N13B2maAatkr5PE5Rye_3yv_prHQU",
-        authDomain: "train-choochoo.firebaseapp.com",
-        databaseURL: "https://train-choochoo.firebaseio.com",
-        projectId: "train-choochoo",
-        storageBucket: "train-choochoo.appspot.com",
-        messagingSenderId: "592089960011"
-    };
-  firebase.initializeApp(config);
+        apiKey: "AIzaSyA8Y55aG3LSjT0SqWWI8AVBWiociNJlp_M",
+        authDomain: "train-4526b.firebaseapp.com",
+        databaseURL: "https://train-4526b.firebaseio.com",
+        projectId: "train-4526b",
+        storageBucket: "",
+        messagingSenderId: "284438291495"
+      };
+      firebase.initializeApp(config);
   return firebase;
   }()
