@@ -1,0 +1,16 @@
+.jumbo-train  {
+    background-image: url("https://image.ibb.co/hvzCcx/train.png");
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+}
+
+.train-header {
+    background-color: rgb(19, 16, 53);
+    color: aliceblue;
+    border: 2px solid rgb(175, 118, 11);
+}
+
+.train-cards {
+    margin-bottom: 5px;
+    
+}
