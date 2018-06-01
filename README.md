@@ -7,7 +7,7 @@ Firebase is used to host a globally available set of data that is retrieved and 
 
 ![alt text](https://image.ibb.co/dfWKdJ/train.png)
 
-### Check out the Link Below:
+### Thirsty for more? Check out the Link Below:
 [Train: a firebase backed Scheduling app](https://guycpalmer.github.io/train/)
 
 #### Author:
